@@ -5,8 +5,8 @@ def two_sum(nums: list, target: int) -> list:
                 return [i, j]
             
 def two_sum_2(nums: list, target: int) -> list:
-    lookup = {}
+    complements = {}
     for i, num in enumerate(nums):
-        if target - num in lookup:
-            return [lookup[target - num], i]
-        lookup[num] = i
+        if target - num in complements:
+            return [complements[target - num], i]
+        complements[num] = i
