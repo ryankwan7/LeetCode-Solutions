@@ -1,11 +1,17 @@
 import two_sum
 
 def test(nums: list, target: int, output: list):
-    assert two_sum.two_sum(nums, target) == output
-    assert two_sum.two_sum_2(nums, target) == output
+
     print("Input: nums = " + str(nums) + ", target = " + str(target))
-    print("Output (simple): " + str(two_sum.two_sum(nums, target)))
-    print("Output (hash table): " + str(two_sum.two_sum_2(nums, target)) + "\n")
+
+    result1 = two_sum.two_sum(nums, target)
+    result2 = two_sum.two_sum_2(nums, target)
+
+    print("Output (simple): " + str(result1))
+    print("Output (hash table): " + str(result2) + "\n")
+
+    assert result1 == output
+    assert result2 == output
     
 def main():
     nums = [2, 7, 11, 15]
