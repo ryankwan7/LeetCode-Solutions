@@ -1,9 +1,10 @@
 import valid_parentheses
 
 def test(s:str, output: bool):
-    assert valid_parentheses.valid_parentheses(s) == output
+    result = valid_parentheses.valid_parentheses(s)
+    assert result == output
     print("Input: s = " + str(s))
-    print("Output: " + str(valid_parentheses.valid_parentheses(s)))    
+    print("Output: " + str(result) + "\n")    
     
 def main():
     s = "()"
