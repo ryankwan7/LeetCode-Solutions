@@ -1,7 +1,6 @@
 import two_sum
 
 def test(nums: list, target: int, output: list):
-
     print("Input: nums = " + str(nums) + ", target = " + str(target))
 
     result1 = two_sum.two_sum(nums, target)
