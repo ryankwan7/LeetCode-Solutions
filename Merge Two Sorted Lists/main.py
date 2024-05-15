@@ -59,6 +59,5 @@ def main():
     output.push(0)
     test(list1.head, list2.head, output.head)
 
-
 if __name__ == "__main__":
     main()
